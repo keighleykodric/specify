@@ -24,7 +24,7 @@
       "name": "Design Tokens / Spacing",
       "path": "assets/styles/variables/spacing.css",
       "filter": {
-        "types": ["measurment"]
+        "types": ["measurement"]
       },
       "parsers": [
         {
