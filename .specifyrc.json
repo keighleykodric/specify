@@ -4,7 +4,7 @@
   "rules": [
     {
       "name": "Design Tokens / Style Dictionary",
-      "path": "tokens/dictionary.json",
+      
       "filter": {
         "types": ["color", "measurement", "textStyle", "vector"]
       },
