@@ -6,7 +6,7 @@
       "name": "Design Tokens / Colors",
       "path": "assets/styles/variables/colors.css",
       "filter":{
-        "types": ["color"]
+        "types": ["color", "depth", "measurement"]
       },
       "parsers": [
         {
