@@ -1,0 +1,50 @@
+@mixin sp-body-l-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@mixin sp-body-m-text-style {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@mixin sp-body-s-text-style {
+  font-family: Inter-Regular, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@mixin sp-heading-1-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+@mixin sp-heading-2-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+@mixin sp-label-text-style {
+  font-family: Inter-SemiBold, serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+@mixin sp-subtitle-text-style {
+  font-family: Inter-Medium, serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+}
