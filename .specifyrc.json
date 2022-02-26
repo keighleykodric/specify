@@ -4,7 +4,6 @@
   "rules": [
     {
       "name": "Design Tokens / Style Dictionary Output",
-      
       "filter": {
         "types": ["color", "measurement", "textStyle", "vector"]
       },
@@ -19,7 +18,6 @@
           "name": "to-style-dictionary",
           "options": {
             "splitBy": "/",
-            "formatName": "camelCase",
             "assetsBaseDirectory": {
               "fonts": "assets/icons/"
             }
