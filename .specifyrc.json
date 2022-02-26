@@ -3,8 +3,8 @@
   "head": "specify",
   "rules": [
     {
-      "name": "Design Tokens / SASS",
-      "path": "assets/styles/variables/colors.scss",
+      "name": "Design Tokens / Color CSS",
+      "path": "tokens/colors.css",
       "filter": {
         "types": ["color"]
       },
@@ -18,7 +18,101 @@
         {
           "name": "to-css-custom-properties",
           "options": {
-            "formatName": "kebabCase",
+            "formatName": "camelCase",
+            "formatTokens": {
+              "color": "hex"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Color IOS",
+      "path": "tokens/colors.js",
+      "filter": {
+        "types": ["color"]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-css-custom-properties",
+          "options": {
+            "formatName": "camelCase",
+            "formatTokens": {
+              "color": "hex8"
+            }
+          }
+        }
+      ]
+    },
+    {
+  "name": "to-theme-ui",
+  "options": {
+    "variants": true,
+    "formatTokens": {
+      "colorFormat": {
+        "format": "hex"
+      },
+      "fontSizeFormat": {
+        "type": "string",
+        "unit": "rem",
+        "freeze": true
+      }
+    },
+    "presets": {
+      "fontWeights": {
+        "preset": "base",
+        "freeze": true
+      }
+    }
+  }
+},
+    {
+      "name": "Design Tokens / Color CSS",
+      "path": "tokens/colors.css",
+      "filter": {
+        "types": ["color"]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-css-custom-properties",
+          "options": {
+            "formatName": "camelCase",
+            "formatTokens": {
+              "color": "hex"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Design Tokens / Color SASS",
+      "path": "tokens/colors.scss",
+      "filter": {
+        "types": ["color"]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-css-custom-properties",
+          "options": {
+            "formatName": "camelCase",
             "formatTokens": {
               "color": "hex"
             }
@@ -28,7 +122,7 @@
     },
     {
       "name": "Design Tokens / Spacing",
-      "path": "assets/styles/variables/spacing.css",
+      "path": "tokens/spacing.css",
       "filter": {
         "types": ["measurement"]
       },
