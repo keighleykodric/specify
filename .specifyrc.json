@@ -16,7 +16,7 @@
           }
         },
         {
-          "name": "to-scss-map",
+          "name": "to-css-custom-properties",
           "options": {
             "formatName": "kebabCase",
             "formatTokens": {
