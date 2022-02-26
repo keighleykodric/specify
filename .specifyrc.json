@@ -151,13 +151,55 @@
           }
         },
         {
-          "name": "to-css-custom-properties",
-          "options": {
-            "formatName": "camelCase",
-            "formatTokens": {
-              "color": "hex"
-            }
-          }
+          "name": "primary",
+          "value": {
+            "a": 1,
+            "b": 255,
+            "g": 189,
+            "r": 198
+          },
+          "type": "color"
+        },
+        {
+          "name": "baseSpace01",
+          "value": {
+            "unit": "px",
+            "measure": 4
+          },
+          "type": "measurement"
+        },
+        {
+          "name": "body",
+          "value": {
+            "font": {
+              "id": "69d2d62e-4d62-45d7-b85f-5da2f9f0c0d4",
+              "name": "Roboto-Regular",
+              "value": {
+                "fontFamily": "Roboto",
+                "fontWeight": 400,
+                "fontPostScriptName": "Roboto-Regular"
+              },
+              "type": "font"
+            },
+            "fontSize": {
+              "value": {
+                "unit": "px",
+                "measure": 16
+              }
+            },
+            "textAlign": {
+              "vertical": "top",
+              "horizontal": "left"
+            },
+            "lineHeight": {
+              "value": {
+                "unit": "px",
+                "measure": 20
+              }
+            },
+            "fontVariant": ["small-caps"]
+          },
+          "type": "textStyle"
         }
       ]
     },
