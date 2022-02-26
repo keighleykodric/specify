@@ -5,8 +5,8 @@
     {
       "name": "Design Tokens / Colors",
       "path": "assets/styles/variables/colors.css",
-      "filter":{
-        "types": ["color", "depth", "measurement"]
+      "filter": {
+        "types": ["color"]
       },
       "parsers": [
         {
@@ -19,6 +19,31 @@
           "name": "to-css-custom-properties"
         }
       ]
+    },
+    {
+      "name": "Design Tokens / Spacing",
+      "path": "assets/styles/variables/spacing.css",
+      "filter": {
+        "types": ["measurment"]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-css-custom-properties"
+        }
+      ]
+    },
+    {
+      "name": "Assets",
+      "path": "assets/",
+      "filter": {
+        "types": ["vector"]
+      }
     }
   ]
 }
