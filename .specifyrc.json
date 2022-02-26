@@ -3,7 +3,7 @@
   "head": "specify",
   "rules": [
     {
-      "name": "Design Tokens / Style Dictionary",
+      "name": "Design Tokens / Style Dictionary Output",
       
       "filter": {
         "types": ["color", "measurement", "textStyle", "vector"]
