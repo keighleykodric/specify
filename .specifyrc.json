@@ -3,6 +3,28 @@
   "head": "specify",
   "rules": [
     {
+      "name": "Design Tokens / Style Dictionary",
+      "path": "tokens/dictionary.json",
+      "filter": {
+        "types": [
+          "color"
+        ]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": [
+              "name"
+            ]
+          }
+        },
+        {
+          "name": "to-style-dictionary"
+        }
+      ]
+    },
+    {
       "name": "Design Tokens / Color CSS",
       "path": "tokens/colors.css",
       "filter": {
@@ -94,7 +116,7 @@
     },
     {
       "name": "Design Tokens / Theme",
-      "path": "tokens/theme.scss",
+      "path": "tokens/theme.js",
       "filter": {
         "types": [
           "color",
