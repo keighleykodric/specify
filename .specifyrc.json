@@ -18,7 +18,11 @@
         {
           "name": "to-style-dictionary",
           "options": {
-            "formatName": "camelCase"
+            "splitBy": "/",
+            "formatName": "camelCase",
+            "assetsBaseDirectory": {
+              "fonts": "assets/icons/"
+            }
           }
         }
       ]
