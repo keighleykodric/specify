@@ -21,6 +21,25 @@
       ]
     },
     {
+      "name": "Design Tokens / Colors",
+      "path": "assets/styles/variables/colors.scss",
+      "filter": {
+        "types": ["color"]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"],
+            "formatTokens": { "color": "hex" }
+          }
+        },
+        {
+          "name": "to-scss-map"
+        }
+      ]
+    },
+    {
       "name": "Design Tokens / Spacing",
       "path": "assets/styles/variables/spacing.css",
       "filter": {
