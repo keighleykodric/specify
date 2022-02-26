@@ -51,27 +51,68 @@
       ]
     },
     {
-  "name": "to-theme-ui",
-  "options": {
-    "variants": true,
-    "formatTokens": {
-      "colorFormat": {
-        "format": "hex"
+      "name": "Design Tokens / Text Style",
+      "path": "tokens/textStyles.scs",
+      "filter": {
+        "types": ["textStyle"]
       },
-      "fontSizeFormat": {
-        "type": "string",
-        "unit": "rem",
-        "freeze": true
-      }
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-scss-mixin-text-style",
+          "options": {
+            "exclude": ["color", "text-indent", "vertical-align", "text-align"],
+            "prefix": "sp-",
+            "suffix": "-text-style",
+            "relativeLineHeight": true,
+            "genericFamily": "serif"
+          }
+        }
+      ]
     },
-    "presets": {
-      "fontWeights": {
-        "preset": "base",
-        "freeze": true
-      }
-    }
-  }
-},
+    {
+      "name": "Design Tokens / Theme",
+      "path": "tokens/textStyles.scs",
+      "filter": {
+        "types": ["color", "measurement", "textStyle"]
+      },
+      "parsers": [
+        {
+          "name": "sort-by",
+          "options": {
+            "keys": ["name"]
+          }
+        },
+        {
+          "name": "to-theme-ui",
+          "options": {
+            "variants": true,
+            "formatTokens": {
+              "colorFormat": {
+                "format": "hex"
+              },
+              "fontSizeFormat": {
+                "type": "string",
+                "unit": "rem",
+                "freeze": true
+              }
+            },
+            "presets": {
+              "fontWeights": {
+                "preset": "base",
+                "freeze": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    
     {
       "name": "Design Tokens / Color CSS",
       "path": "tokens/colors.css",
