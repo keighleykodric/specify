@@ -1,5 +1,10 @@
 :root {
   /* MEASUREMENT */
+  --radius-lg: 8px;
+  --radius-med: 6px;
+  --radius-round: 250px;
+  --radius-sm: 4px;
+  --radius-xl: 12px;
   --space-1: 4px;
   --space-10: 56px;
   --space-11: 64px;
