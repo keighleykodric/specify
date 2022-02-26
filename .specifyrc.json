@@ -21,7 +21,7 @@
       ]
     },
     {
-      "name": "Design Tokens / Colors",
+      "name": "Design Tokens / SASS",
       "path": "assets/styles/variables/colors.scss",
       "filter": {
         "types": ["color"]
@@ -30,13 +30,19 @@
         {
           "name": "sort-by",
           "options": {
-            "keys": ["name"],
-            "formatTokens": { "color": "hex" }
+            "keys": ["name"]
           }
         },
         {
-          "name": "to-scss-map"
+          "name": "to-scss-map",
+          "options": {
+            "formatName": "kebabCase",
+            "formatTokens": {
+              "color": "hex"
+            }
+          }
         }
+
       ]
     },
     {
