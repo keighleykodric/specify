@@ -60,7 +60,7 @@
     },
     {
       "name": "Design Tokens / Text Style",
-      "path": "tokens/textStyles.scs",
+      "path": "tokens/textStyles.scss",
       "filter": {
         "types": [
           "textStyle"
@@ -94,7 +94,7 @@
     },
     {
       "name": "Design Tokens / Theme",
-      "path": "tokens/textStyles.scs",
+      "path": "tokens/theme.scss",
       "filter": {
         "types": [
           "color",
@@ -196,7 +196,8 @@
             "formatTokens": {
               "fontSize": {
                 "unit": "rem"
-              }
+              },
+              "color": {"format": "hex"}
             },
             "splitBy": "/"
           }
